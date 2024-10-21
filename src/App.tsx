@@ -37,6 +37,7 @@ function App() {
   return (
     <I18nextProvider i18n={i18}>
       <RouterProvider router={router} />
+      {/* <Index/> */}
     </I18nextProvider>
   )
 }
