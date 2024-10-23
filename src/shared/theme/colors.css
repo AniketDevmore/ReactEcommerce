@@ -1,8 +1,16 @@
 :root{
     --text-color: #000000;
-    --background-color: #e6ffe6;
-    --background-box-color: #ccffff;
+    --text-blue: #0000ff;
+    --text-color-blue: #004d4d;
+    --text-white: #ffffff;
+
     --button-background: #80ffff;
     --button-hover: #00cccc;
-    --text-color-blue: #004d4d
+
+    --background-color: #e6ffe6;
+    --background-box-color: #ccffff;
+    --background-white: #ffffff;
+    --background-gray: #909090;
+    --background-blue: #0000ff;
+    --background-lightBlue: #3366ff;
 }
