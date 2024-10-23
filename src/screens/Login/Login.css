@@ -1,0 +1,35 @@
+.loginContainer {
+    height: 100vh;
+}
+
+.imageBackground {
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 0;
+}
+
+#inputContainer {
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(255, 245, 226);
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+#filled-basic, #filled-adornment-password {
+    background-color: rgb(255, 255, 255);
+}
