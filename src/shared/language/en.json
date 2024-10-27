@@ -15,8 +15,19 @@
         "facebook": "Continue with Facebook",
         "apple": "Continue with Apple",
         "forget": "Forget password",
-        "login": "Log in",
+        "login": "Log In",
+        "welcome": "Hi, Welcome Back!",
         "account": "Don't have an account?",
         "signUp": "Sign up"
+    },
+    "signUpScreen": {
+        "google": "Continue with Google",
+        "facebook": "Continue with Facebook",
+        "apple": "Continue with Apple",
+        "forget": "Forget password",
+        "welcome": "Create an account",
+        "signUp": "Sign Up",
+        "account": "Already have an account?",
+        "logIn": "Log In"
     }
 }

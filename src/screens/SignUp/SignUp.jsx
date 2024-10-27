@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import "./Login.css"
+import "./SignUp.css"
 import { Box, FilledInput, FormControl, IconButton, InputAdornment, InputLabel, TextField } from "@mui/material";
 import { Visibility } from '@mui/icons-material';
 import { VisibilityOff } from '@mui/icons-material';
 import loginBackground from '../../../public/loginBackground2.jpg'
 import { useTranslation } from "react-i18next";
 import google from "../../../public/google.png"
-import facebook from "../../../public/facebook.png"
-import { useNavigate } from "react-router-dom";
+import facebook from "../../../public/facebook.png";
 
-const Login = () => {
+const SignUp = () => {
     const { t } = useTranslation();
-    const navigatation = useNavigate()
     const [showPassword, setShowPassword] = useState(false);
 
     const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -23,35 +21,30 @@ const Login = () => {
     const handleMouseUpPassword = (event) => {
         event.preventDefault();
     };
-
-    const signUpHandler = () => {
-        navigatation('/SignUp')
-    }
-
     return (
-        <div className="loginContainer">
-            <img src={loginBackground} alt='farming' className="imageBackground" />
-            <div id="inputContainer">
-                <div className="btnsContainer">
-                    <text id="logIn">{t("loginScreen.welcome")}</text>
+        <div className="signupContainer">
+            <img src={loginBackground} alt='farming' className="imageBackgroundSignup" />
+            <div id="inputContainerSignup">
+                <div className="btnsContainerSignup">
+                    <text id="signup">{t("signUpScreen.welcome")}</text>
                 </div>
-                <div className="btnsContainer">
-                    <button className="buttonStyle">
+                <div className="btnsContainerSignup">
+                    <button className="buttonStyleSignup">
                         <img src={google} alt='google' className="iconImage" />
-                        <text className="buttonText">{t("loginScreen.google")}</text>
+                        <text className="buttonTextSignup">{t("signUpScreen.google")}</text>
                     </button>
-                    <button className="buttonStyle">
+                    <button className="buttonStyleSignup">
                         <img src={facebook} alt='facebook' className="iconImageFb" />
-                        <text className="buttonText">{t("loginScreen.facebook")}</text>
+                        <text className="buttonTextSignup">{t("signUpScreen.facebook")}</text>
                     </button>
-                    {/* <button className="buttonStyle">
-                        <text className="buttonText">{t("loginScreen.apple")}</text>
+                    {/* <button className="buttonStyleSignup">
+                        <text className="buttonTextSignup">{t("signUpScreen.apple")}</text>
                     </button> */}
                 </div>
-                <div className="horContainer">
-                    <div className="horLine"></div>
-                    <text id="orText">OR</text>
-                    <div className="horLine"></div>
+                <div className="horContainerSignup">
+                    <div className="horLineSignup"></div>
+                    <text id="orTextSignup">OR</text>
+                    <div className="horLineSignup"></div>
                 </div>
                 <Box
                     component="form"
@@ -63,6 +56,18 @@ const Login = () => {
                     <TextField
                         id="filled-basic"
                         label="User Name"
+                        variant="filled"
+                    // value={'aaa'}
+                    />
+                     <TextField
+                        id="filled-basic"
+                        label="Email"
+                        variant="filled"
+                    // value={'aaa'}
+                    />
+                     <TextField
+                        id="filled-basic"
+                        label="Phone Number"
                         variant="filled"
                     // value={'aaa'}
                     />
@@ -89,22 +94,22 @@ const Login = () => {
                     </FormControl>
 
                 </Box>
-                <div id="forgetPass">
-                    <a><text id="forgetText">{t("loginScreen.forget")}</text></a>
+                <div id="forgetPassSignup">
+                    <a><text id="forgetTextSignup">{t("signUpScreen.forget")}</text></a>
                 </div>
-                <div className="btnsContainer">
-                    <button className="loginButtonStyle"><text className="loginButtonText">{t("loginScreen.login")}</text></button>
+                <div className="btnsContainerSignup">
+                    <button className="loginButtonStyle"><text className="loginButtonText">{t("signUpScreen.signUp")}</text></button>
                 </div>
-                <div className="horContainer">
-                    <div id="horSingleLine"></div>
+                <div className="horContainerSignup">
+                    <div id="horSingleLineSignup"></div>
                 </div>
-                <div className="btnsContainer">
-                    <text id="accountText">{t("loginScreen.account")}</text>
-                    <button onClick={signUpHandler} className="buttonStyle"><text className="buttonText">{t("loginScreen.signUp")}</text></button>
+                <div className="btnsContainerSignup">
+                    <text id="accountTextSignup">{t("signUpScreen.account")}</text>
+                    <button className="buttonStyleSignup"><text className="buttonTextSignup">{t("signUpScreen.logIn")}</text></button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Login;
+export default SignUp;

@@ -1,10 +1,10 @@
-.loginContainer {
+.signupContainer {
     height: 100%;
 }
 
 /* image css */
-.imageBackground {
-    height: 100%;
+.imageBackgroundSignup {
+    height: 110%;
     width: 100%;
     opacity: 0.9;
     position: absolute;
@@ -12,7 +12,7 @@
 }
 
 /* button css */
-#inputContainer {
+#inputContainerSignup {
     z-index: 1;
     position: absolute;
     background-color: rgb(255, 245, 226);
@@ -23,13 +23,13 @@
     border-radius: 20px;
 }
 
-#logIn {
+#signup {
     font-size: 25px;
     font-weight: 900;
     color: var(--text-color-blue);
 }
 
-.btnsContainer {
+.btnsContainerSignup {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@
     margin-right: 2px;
 }
 
-.buttonStyle {
+.buttonStyleSignup {
     background-color: var(--background-white);
     height: 40px;
     width: 70%;
@@ -62,7 +62,7 @@
     justify-content: center;
 }
 
-.buttonStyle:hover {
+.buttonStyleSignup:hover {
     background-color: var(--background-box-color);
     height: 40px;
     width: 70%;
@@ -70,14 +70,14 @@
     margin: 5px 0;
 }
 
-.buttonText {
+.buttonTextSignup {
     font-size: 14px;
     color: var(--text-color);
     font-weight: 500;
 }
 
 /* horizontal line css */
-.horContainer {
+.horContainerSignup {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,13 +85,13 @@
     margin-bottom: -10px;
 }
 
-.horLine {
+.horLineSignup {
     height: 1px;
     width: 31%;
     background-color: var(--background-gray);
 }
 
-#orText {
+#orTextSignup {
     color: var(--text-color);
     font-size: 15px;
     padding: 0 10px;
@@ -115,7 +115,7 @@
 }
 
 /* forget password */
-#forgetPass {
+#forgetPassSignup {
     width: 85%;
     display: flex;
     align-items: flex-start;
@@ -124,7 +124,7 @@
     margin-top: -5px;
 }
 
-#forgetText {
+#forgetTextSignup {
     font-size: 16px;
     color: var(--text-blue);
     text-decoration: underline;
@@ -156,21 +156,21 @@
 }
 
 /* single horizontal line */
-#horSingleLine {
+#horSingleLineSignup {
     height: 1px;
     width: 71%;
     background-color: var(--background-gray);
 }
 
 /* sign up css */
-#accountText {
+#accountTextSignup {
     font-size: 16px;
     color: var(--text-blue);
     padding: 20px 0 10px 0;
 }
 
 @media only screen and (max-width: 800px) {
-    #inputContainer {
+    #inputContainerSignup {
         z-index: 1;
         position: absolute;
         background-color: rgb(255, 245, 226);
@@ -183,7 +183,7 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    #inputContainer {
+    #inputContainerSignup {
         z-index: 1;
         position: absolute;
         background-color: rgb(255, 245, 226);
