@@ -7,7 +7,7 @@ import loginBackground from '../../../public/loginBackground2.jpg'
 import { useTranslation } from "react-i18next";
 import google from "../../../public/google.png"
 import facebook from "../../../public/facebook.png"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const { t } = useTranslation();
@@ -90,7 +90,7 @@ const Login = () => {
 
                 </Box>
                 <div id="forgetPass">
-                    <a><text id="forgetText">{t("loginScreen.forget")}</text></a>
+                <Link to={"/ForgotPass"}><text id="forgetText">{t("loginScreen.forget")}</text></Link>
                 </div>
                 <div className="btnsContainer">
                     <button className="loginButtonStyle"><text className="loginButtonText">{t("loginScreen.login")}</text></button>

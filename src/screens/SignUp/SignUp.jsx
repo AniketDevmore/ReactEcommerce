@@ -7,9 +7,11 @@ import loginBackground from '../../../public/loginBackground2.jpg'
 import { useTranslation } from "react-i18next";
 import google from "../../../public/google.png"
 import facebook from "../../../public/facebook.png";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const { t } = useTranslation();
+    const naviation = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
 
     const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -95,7 +97,7 @@ const SignUp = () => {
 
                 </Box>
                 <div id="forgetPassSignup">
-                    <a><text id="forgetTextSignup">{t("signUpScreen.forget")}</text></a>
+                    <Link to={"/ForgotPass"}><text id="forgetTextSignup">{t("signUpScreen.forget")}</text></Link>
                 </div>
                 <div className="btnsContainerSignup">
                     <button className="loginButtonStyle"><text className="loginButtonText">{t("signUpScreen.signUp")}</text></button>

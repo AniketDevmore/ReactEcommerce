@@ -3,6 +3,7 @@ import Intro from "../screens/Intro/Intro";
 import Login from "../screens/Login/Login";
 import SkipIntroRoute from "./SkipIntroRoute";
 import SignUp from "../screens/SignUp/SignUp";
+import ForgotPass from "../screens/ForgotPass/ForgotPass";
 
 const skipIntroRoute = () => {
     let intro = localStorage.getItem('skipIntro');
@@ -26,6 +27,12 @@ export const router = createBrowserRouter([
         path: '/SignUp',
         element: (<SkipIntroRoute>
             <SignUp />
+        </SkipIntroRoute>),
+    },
+    {
+        path: '/ForgotPass',
+        element: (<SkipIntroRoute>
+            <ForgotPass />
         </SkipIntroRoute>),
     },
 ])
