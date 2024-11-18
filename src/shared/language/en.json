@@ -29,5 +29,13 @@
         "signUp": "Sign Up",
         "account": "Already have an account?",
         "logIn": "Log In"
+    },
+    "forgotScreen": {
+        "apple": "Continue with Apple",
+        "forget": "Don't remember your password",
+        "welcome": "Don't remember your password",
+        "signUp": "Sign Up",
+        "account": "Don't have an account?",
+        "forgot": "Send"
     }
 }
